@@ -1,0 +1,99 @@
+/* Posição e tamanho do botão de hambúrguer */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  right: 20px;
+  top: 67px;
+  z-index: 1;
+}
+
+
+/* Cor/formato das barras do ícone de hambúrguer */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Cor/formato das barras do ícone de hambúrguer ao passar o mouse */
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+/* Posição e tamanho do botão de fechar clicável */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  left: 8px;
+  top: -20px !important;
+}
+
+ 
+
+
+/* Cor/formato do "X" do botão de fechar */
+.bm-cross {
+  background: #bdc3c7;
+  
+}
+
+/*
+Estilos do contêiner da barra lateral
+Nota: Cuidado ao modificar este elemento, pois pode quebrar as animações – na maioria dos casos, não é necessário alterá-lo
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100vh;
+  aria-hidden: false !important;
+}
+
+/* Estilos gerais da barra lateral */
+.bm-menu {
+  background: #ffffff;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+  position: relative;
+  top: -40px;
+  box-shadow: 1px 0px 10px 0px #00000075;
+}
+
+
+/* Formato necessário para os efeitos "bubble" ou "elastic" */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Contêiner da lista de itens */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Estilos dos itens individuais */
+.bm-item {
+  display: inline-block;
+  color: #0F4A3F;
+  margin-bottom: 10px;
+  text-align: left;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.bm-item:hover {
+  color:#04719c;
+}
+
+/* Estilos do fundo escurecido (overlay) */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 1024px) {
+  .bm-burger-button {
+    display: none;
+  }
+  .bm-menu-wrap {
+    display: none;
+  }
+  
+}

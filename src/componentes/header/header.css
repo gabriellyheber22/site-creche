@@ -1,0 +1,102 @@
+:root{
+    --verde-padrão: #1FA68D;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+   display: flex;
+   flex-direction: column;
+    background: url(../../assets/Imagens/designRasgadoGrande.svg) no-repeat center;
+    background-size: cover;
+    height: 140px;
+   
+
+    
+
+}
+header .containerHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 45px;
+    background-color: var(--verde-padrão);
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    height: 5rem;
+}
+.sidebarMenuMobile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navMenuDesktop{
+    display: none;
+}
+.logoGrande{
+    display: none;
+}
+header nav .matricula{
+    display: none;
+}
+
+@media (min-width: 1024px) {
+  
+     
+    .navBar{
+        justify-content:space-evenly;
+    }
+    .navMenuDesktop{
+        display: flex;
+        justify-content: center;
+    }
+    .navMenuDesktop ul{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        
+        
+        }
+    .navMenuDesktop ul li{
+        
+        padding: 1rem;
+    }
+     .navMenuDesktop ul li a{ /*A tag 'a' representa a tag Link* */
+        text-transform: uppercase;
+        text-decoration: none;
+        color:  #0F4A3F;
+        font-weight: bold;
+
+    }
+    .navMenuDesktop ul li a:hover{ 
+        color:  #2bbea3;}
+    .logoGrande{
+        display: block;
+    }
+    .logoPequena{
+        display: none;
+    }
+
+    header nav .matricula{
+        display: block;
+       
+    }
+    .sidebarMenuMobile{
+        display: none;
+    }
+
+    header nav ul {
+        flex-direction: row;
+    }
+
+}
