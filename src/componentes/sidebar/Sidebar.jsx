@@ -11,7 +11,7 @@ function Sidebar() {
   
   return (
     <Menu right width={ '70%' } customBurgerIcon = {  < img  src = {menuHamburguer}  / >} aria-hidden = 'false' >
-   <Link to="/">Home</Link>
+   <Link to="/home">Home</Link>
    <Link to="/nossaEquipe">Nossa Equipe</Link>
    <Link to="/Turmas">Turmas</Link>
    <Link to="/Contato">Contato</Link>
