@@ -1,11 +1,15 @@
 import React from "react";
+import Carrossel from "../../componentes/carrossel/Carrossel";
 import "./Home.css";
 
 function Home() {
-    return (
-        <div className="home">
-        <h1>Olá</h1>
-        </div>
-    );
+  return (
+    <article>
+      <section className="carrossel">
+        <Carrossel />
+      </section>
+      <section className=""></section>
+    </article>
+  );
 }
 export default Home;

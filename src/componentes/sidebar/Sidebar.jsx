@@ -3,7 +3,7 @@ import { stack as Menu } from 'react-burger-menu';
 import { Link } from 'react-router-dom';
 import './sidebar.css';
 import menuHamburguer from '../../assets/Imagens/menuHamburguerPequeno.svg';
-import NossaEquipe from '../../pages/nossaEquipe/NossaEquipe';  
+
 
 
 
