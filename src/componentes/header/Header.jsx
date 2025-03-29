@@ -23,7 +23,7 @@ function Header() {
 
       <nav className="navBar">
         <div className="containerLogo">
-          <Link to="/home">
+          <Link to="/">
             <img className="logoPequena" src={logoPequena} alt="Logo do CMEI Carlos Albeto Cruz" />
             <img className="logoGrande" src={logoGrande} alt="Logo do CMEI Carlos Albeto Cruz" />
           </Link>
@@ -38,7 +38,7 @@ function Header() {
         <div className="navMenuDesktop">
             <ul className="navBarUl">
                 <li>
-                <Link to="/home">Início</Link>
+                <Link to="/">Início</Link>
                 </li>
                 <li>
                 <Link to="/nossaEquipe">Nossa Equipe</Link>

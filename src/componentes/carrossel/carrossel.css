@@ -1,7 +1,26 @@
-.carousel-inner {
-    display: flex;
-    width: 100vw;
-    height: 70vh;
-    position: absolute;
-    top: -19px;
+.imagemSlide{
+    opacity: 0.8;
 }
+.legenda{
+    width: 30%;
+    height: 50%;
+    position: absolute;
+    top: 30%;
+    transform: translateX(-30%);
+   
+}
+.legenda h1, .legenda h3, .legenda p{
+    text-align: start;
+}
+.legenda h1{
+    font-family: var(--font-Arredondada);
+    font-size: ;
+}
+.legenda h3{
+    font-family: var(--font-Padrao);
+}
+.legenda p{
+    font-family: var(--font-Padrao);
+    font-size: 1.2rem;
+}
+

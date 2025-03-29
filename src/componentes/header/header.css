@@ -1,18 +1,14 @@
 :root{
     --verde-padrão: #1FA68D;
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 header{
    display: flex;
    flex-direction: column;
     background: url(../../assets/Imagens/designRasgadoGrande.svg) no-repeat center;
     background-size: cover;
-    height: 140px;
+    height: 120px;
    position:sticky;
     z-index: 1;
     border: url(../../assets/Imagens/designRasgadoGrande.svg) no-repeat center;
@@ -35,7 +31,7 @@ header .containerHeader{
     justify-content: space-between;
     align-items: center;
     padding: 0 1rem;
-    height: 5rem;
+    height: 4rem;
 }
 .sidebarMenuMobile{
     display: flex;
@@ -54,23 +50,35 @@ header nav .matricula{
 }
 
 @media (min-width: 1024px) {
+    .logoGrande{
+        display: block;
+    }
+    .logoPequena{
+        display: none;
+    }
   
-     
+     header{
+        height: 140px;
+     }
     .navBar{
         justify-content:space-evenly;
+        height: 5rem;
+        
     }
-    .navMenuDesktop{
+    div .navMenuDesktop{
         display: flex;
         justify-content: center;
+        align-items: center;
     }
-    .navMenuDesktop ul{
+    .navMenuDesktop .navBarUl{
         display: flex;
         flex-direction: row;
         list-style: none;
-        
+        align-items: center;
+        margin: 0;
         
         }
-    .navMenuDesktop ul li{
+    .navMenuDesktop .navBarUl li{
         
         padding: 1rem;
     }
@@ -83,12 +91,7 @@ header nav .matricula{
     }
     .navMenuDesktop ul li a:hover{ 
         color:  #2bbea3;}
-    .logoGrande{
-        display: block;
-    }
-    .logoPequena{
-        display: none;
-    }
+   
 
     header nav .matricula{
         display: block;
@@ -101,5 +104,7 @@ header nav .matricula{
     header nav ul {
         flex-direction: row;
     }
+   
+    
 
 }

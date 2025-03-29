@@ -5,7 +5,7 @@ import "./Home.css";
 function Home() {
   return (
     <article>
-      <section className="carrossel">
+      <section className="carrossel ">
         <Carrossel />
       </section>
       <section className=""></section>
