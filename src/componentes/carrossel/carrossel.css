@@ -1,26 +1,115 @@
-.imagemSlide{
-    opacity: 0.8;
-}
-.legenda{
-    width: 30%;
-    height: 50%;
-    position: absolute;
-    top: 30%;
-    transform: translateX(-30%);
+
+.carrossel {
+    width: 100vw;
+    max-width: 100%;
+    height: 80vh; /* Define a altura do carrossel */
+    margin: 0 auto;
+    padding: 0;
+  }
+  .carrossel .imagemSlide {
+    width: 100vw !important;
+    height: 80vh !important; /* Define a altura das imagens */
+    object-fit: cover; /* Mantém o aspecto da imagem e cobre toda a área */
+  }
+
+ .legenda{
+    display: flex;
+    width: 95vw;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    transform: translateX(-13.5%);
+    background-color: rgba(64, 69, 70, 0.493);
+    border-radius: 10px;
+    
    
-}
-.legenda h1, .legenda h3, .legenda p{
-    text-align: start;
-}
+} */
+
 .legenda h1{
     font-family: var(--font-Arredondada);
-    font-size: ;
+   margin: -2rem 0;
+  
+    
 }
 .legenda h3{
     font-family: var(--font-Padrao);
+    font-weight:lighter;
+    
+  
 }
 .legenda p{
-    font-family: var(--font-Padrao);
-    font-size: 1.2rem;
+    display: none;
+    
 }
 
+@media (min-width: 768px) {
+    .legenda{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        height: 50%;
+        text-align: center;
+        position: absolute;
+        top: 30%;
+        transform: translateX(-5%);
+        padding: 1rem;
+        background: none;
+        
+       
+    }
+    .legenda h1, .legenda h3, .legenda p{
+        text-align: start;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+    .legenda h1{
+        font-family: var(--font-Arredondada);
+        margin: 0;
+    }
+    .legenda h3{
+        font-family: var(--font-Padrao);
+        font-weight:lighter;
+      
+    }
+    .legenda p{
+        font-family: var(--font-Padrao);
+        font-weight: 300;
+        display: block;
+    }
+}
+@media (min-width: 768px) and ( max-width: 1023px) {
+    .legenda h1{
+        font-size: 4rem;
+    }
+    .legenda h3{
+        font-size: 2rem;
+    }
+    .legenda p{
+        font-size: 1.2rem;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1299px){
+   
+    .legenda h1{
+        font-size: 6rem;
+    }
+    .legenda h3{
+        font-size: 2.5rem;
+    }
+    .legenda p{
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1300px) {
+    .legenda h1{
+        font-size: 10rem;
+    }
+    .legenda h3{
+        font-size: 3.5rem;
+    }
+    .legenda p{
+        font-size: 2.5rem;
+    }
+}
