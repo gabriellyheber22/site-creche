@@ -1,0 +1,37 @@
+.bordaInferior {
+    position: relative;
+    margin-top: -25px;
+   
+}
+.bordaSuperior, .bordaSuperiorMedio{
+    display: none;
+   
+    }
+    .bordaSuperiorPequena{
+        display: block;
+        margin-top: -1px;
+    }
+
+
+@media (min-width: 768px) and (max-width: 1023px){
+    .bordaSuperiorMedio{
+        display: block;
+        margin-top: -1px;
+    }
+    .bordaSuperior, .bordaSuperiorPequena{
+        display: none;
+    }
+}
+@media (min-width: 1024px){
+    .bordaSuperiorPequena, .bordaSuperiorMedio{
+        display: none;
+    }
+.bordaSuperior{
+    width: 100vw;
+    height: 20vh;
+    position: relative;
+    display: block;
+    margin-top: 46px;
+}
+}
+

@@ -5,6 +5,7 @@ import logoPequena from "../../assets/Imagens/logoPequena.svg";
 import logoGrande from "../../assets/Imagens/logoGrande.svg";
 import botaoMatricula from "../../assets/Imagens/matriculaTelasMaiores.svg";
 import brasaoPequeno from "../../assets/Imagens/brasaoBBG-branco-pequeno.svg";
+import BordaSuperior from "../bordaRasgada/BordaRasgadaSuperior"
 
 import "./Header.css";
 
@@ -57,6 +58,7 @@ function Header() {
           </a>
         </div>
       </nav>
+      <BordaSuperior/>
     </header>
   );
 }

@@ -6,12 +6,10 @@
 header{
    display: flex;
    flex-direction: column;
-    background: url(../../assets/Imagens/designRasgadoGrande.svg) no-repeat center;
-    background-size: cover;
-    height: 120px;
+   width: 100vw;
+    height: 140px;
    position:sticky;
     z-index: 1;
-    border: url(../../assets/Imagens/designRasgadoGrande.svg) no-repeat center;
    
 
     

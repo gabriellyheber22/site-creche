@@ -4,6 +4,7 @@ import Imagem from "react-bootstrap/Image";
 import imagemGrande from "../../assets/Imagens/imagemCarrosselGrande1.svg";
 import imagemGrande2 from "../../assets/Imagens/imagemCarrosselGrande2.svg";
 import imagemGrande3 from "../../assets/Imagens/imagemCarrosselGrande3.svg";
+import BordaInferior from "../../componentes/bordaRasgada/BordaRasgadaInferior"
 
 import "./Carrossel.css";
 
@@ -59,8 +60,9 @@ function Carrossel() {
                 </Carousel.Caption>
               </Carousel.Item>
             </Carousel>
+            <BordaInferior/>
           </div>
-       
+      
   );
 }
 

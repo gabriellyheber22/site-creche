@@ -5,14 +5,9 @@
     
 }
 
- .carrossel {
-    position: relative;
-    top: -15px !important;
-} 
-
-@media (min-width: 1024px) {
+@media (max-width: 1023px) {
      .carrossel {
         position: relative;
-        top: -30px !important;
+        top: -15px !important;
     } 
 }

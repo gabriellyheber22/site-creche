@@ -7,8 +7,12 @@ function Home() {
     <article>
       <section className="carrossel ">
         <Carrossel />
+        
       </section>
-      <section className=""></section>
+     
+      <section className="nossoCMEI">
+       
+      </section>
     </article>
   );
 }
