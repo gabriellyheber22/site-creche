@@ -1,37 +1,123 @@
-.bordaInferior {
+.bordaInferiorGrande, .bordaInferiorMedio, .bordaInferiorPequena {
     position: relative;
-    margin-top: -25px;
-   
-}
-.bordaSuperior, .bordaSuperiorMedio{
-    display: none;
-   
-    }
-    .bordaSuperiorPequena{
-        display: block;
-        margin-top: -1px;
-    }
-
-
-@media (min-width: 768px) and (max-width: 1023px){
-    .bordaSuperiorMedio{
-        display: block;
-        margin-top: -1px;
-    }
-    .bordaSuperior, .bordaSuperiorPequena{
-        display: none;
-    }
-}
-@media (min-width: 1024px){
-    .bordaSuperiorPequena, .bordaSuperiorMedio{
-        display: none;
-    }
-.bordaSuperior{
+    transform: scaleY(-1);
     width: 100vw;
-    height: 20vh;
-    position: relative;
-    display: block;
-    margin-top: 46px;
 }
+.bordaInferiorPequena{
+    bottom: 13px;
+    display: block;
+}
+.bordaInferiorMedio, .bordaInferiorGrande {
+    display: none;
 }
 
+/* Estilização de bordas Superior */
+.bordaSuperior,
+.bordaSuperiorMedio {
+    width: 100vw;
+    position: relative;
+    display: none;
+
+}
+
+.bordaSuperiorPequena {
+    display: block;
+    margin-top: -1px;
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .bordaInferiorMedio{
+        bottom: 24px;
+        display: block;
+    }
+    .bordaInferiorPequena, .bordaInferiorGrande {
+        display: none;
+    }
+
+
+
+
+
+
+/* Estilização de bordas Superior */
+    .bordaSuperiorMedio {
+        display: block;
+        position: relative;
+        top: -1px;
+
+    }
+
+    .bordaSuperior,
+    .bordaSuperiorPequena {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+
+    .bordaSuperiorPequena,
+    .bordaSuperiorMedio {
+        display: none;
+    }
+
+    .bordaSuperior {
+        display: block;
+        top: 15px;
+    }
+
+/* Estilização de bordas Inferior */
+    .bordaInferiorGrande{
+        bottom: 18px;
+        display: block;
+    }
+    .bordaInferiorPequena, .bordaInferiorMedio {
+        display: none;
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 2559px){
+
+    .bordaSuperiorPequena,
+    .bordaSuperiorMedio {
+        display: none;
+    }
+
+    .bordaSuperior {
+
+        display: block;
+        top: 15px;
+    }
+
+    /* Estilização de bordas Inferior */
+    .bordaInferiorGrande{
+        bottom: 14px;
+        display: block;
+    }
+    .bordaInferiorPequena, .bordaInferiorMedio {
+        display: none;
+    }
+}
+@media (min-width: 2560px){
+    
+    .bordaSuperiorPequena,
+    .bordaSuperiorMedio {
+        display: none;
+    }
+
+    .bordaSuperior {
+
+        display: block;
+        top: 20px;
+    }
+
+    /* Estilização de bordas Inferior */
+    .bordaInferiorGrande{
+        bottom: 22px;
+        display: block;
+    }
+    .bordaInferiorPequena, .bordaInferiorMedio {
+        display: none;
+    }
+}
