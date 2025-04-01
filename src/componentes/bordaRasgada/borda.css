@@ -13,16 +13,23 @@
 
 /* Estilização de bordas Superior */
 .bordaSuperior,
-.bordaSuperiorMedio {
+.bordaSuperiorMedio, .bordaSuperiorPequena {
     width: 100vw;
     position: relative;
+    
+
+}
+
+.bordaSuperior,
+.bordaSuperiorMedio {
     display: none;
 
 }
 
+
 .bordaSuperiorPequena {
-    display: block;
-    margin-top: -1px;
+    display:  block;
+    top: 10px;
 }
 
 
@@ -37,15 +44,10 @@
     }
 
 
-
-
-
-
 /* Estilização de bordas Superior */
     .bordaSuperiorMedio {
         display: block;
-        position: relative;
-        top: -1px;
+        top: 13px;
 
     }
 
@@ -56,41 +58,29 @@
 }
 
 @media (min-width: 1024px) and (max-width: 1439px) {
-
-    .bordaSuperiorPequena,
-    .bordaSuperiorMedio {
-        display: none;
-    }
-
-    .bordaSuperior {
-        display: block;
-        top: 15px;
-    }
-
-/* Estilização de bordas Inferior */
     .bordaInferiorGrande{
-        bottom: 18px;
+        bottom: 10px;
         display: block;
     }
     .bordaInferiorPequena, .bordaInferiorMedio {
         display: none;
     }
-}
 
-@media (min-width: 1440px) and (max-width: 2559px){
-
+    /* Estilização de bordas Inferior */
     .bordaSuperiorPequena,
     .bordaSuperiorMedio {
         display: none;
     }
 
     .bordaSuperior {
-
         display: block;
-        top: 15px;
+        top: -1px;
     }
 
-    /* Estilização de bordas Inferior */
+
+}
+
+@media (min-width: 1440px) and (max-width: 2559px){
     .bordaInferiorGrande{
         bottom: 14px;
         display: block;
@@ -98,9 +88,30 @@
     .bordaInferiorPequena, .bordaInferiorMedio {
         display: none;
     }
+
+     /* Estilização de bordas Superior */
+     .bordaSuperiorPequena,
+    .bordaSuperiorMedio {
+        display: none;
+    }
+
+    .bordaSuperior {
+
+        display: block;
+        top: 1px;
+    }
 }
 @media (min-width: 2560px){
-    
+    .bordaInferiorGrande{
+        bottom: 22px;
+        display: block;
+    }
+    .bordaInferiorPequena, .bordaInferiorMedio {
+        display: none;
+    }
+
+
+ /* Estilização de bordas Superior */
     .bordaSuperiorPequena,
     .bordaSuperiorMedio {
         display: none;
@@ -109,15 +120,6 @@
     .bordaSuperior {
 
         display: block;
-        top: 20px;
-    }
-
-    /* Estilização de bordas Inferior */
-    .bordaInferiorGrande{
-        bottom: 22px;
-        display: block;
-    }
-    .bordaInferiorPequena, .bordaInferiorMedio {
-        display: none;
+        top: -1px;
     }
 }

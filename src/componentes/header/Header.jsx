@@ -31,10 +31,7 @@ function Header() {
         </div>
 
         <div className="sidebarMenuMobile">
-            <Sidebar
-              pageWrapId={"page-wrap"}
-              outerContainerId={"outer-container"} c
-            />
+            <Sidebar pageWrapId={"page-wrap"} outerContainerId={"outer-container"} />
         </div>
         <div className="navMenuDesktop">
             <ul className="navBarUl">

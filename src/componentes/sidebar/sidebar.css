@@ -1,6 +1,6 @@
 /* Posição e tamanho do botão de hambúrguer */
 .bm-burger-button {
-  position: fixed;
+  position:static !important;
   width: 36px;
   height: 30px;
   right: 20px;
