@@ -29,7 +29,8 @@
 
 .bordaSuperiorPequena {
     display:  block;
-    top: 10px;
+    top: -1px;
+    z-index: 1;
 }
 
 
@@ -47,7 +48,8 @@
 /* Estilização de bordas Superior */
     .bordaSuperiorMedio {
         display: block;
-        top: 13px;
+        top:-1px;
+        
 
     }
 
@@ -120,6 +122,6 @@
     .bordaSuperior {
 
         display: block;
-        top: -1px;
+        top: 70px;
     }
 }

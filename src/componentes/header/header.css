@@ -7,7 +7,7 @@ header{
    display: flex;
    flex-direction: column;
    width: 100vw;
-    height: 90px;
+    height: 75px;
    position:sticky;
     z-index: 1;
 }
@@ -43,7 +43,7 @@ header nav .matricula{
     display: none;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width:1439px) {
     .logoGrande{
         display: block;
     }
@@ -101,4 +101,76 @@ header nav .matricula{
    
     
 
+}
+@media (min-width:1440px){
+    header .containerHeader{
+        height: 65px;
+    }
+
+
+    .logoGrande{
+        display: block;
+        width: 100px;
+    }
+    .logoPequena{
+        display: none;
+    }
+  
+     header{
+        height: 200px;
+        
+     }
+    .navBar{
+        justify-content:space-evenly;
+        height: 4rem;
+        position: relative;
+        top: 45px;
+        
+    }
+    div .navMenuDesktop{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navMenuDesktop .navBarUl{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        align-items: center;
+        margin: 0;
+        
+        }
+    .navMenuDesktop .navBarUl li{
+        
+        padding: 1rem;
+        margin: 0 1.8rem;
+    }
+     .navMenuDesktop ul li a{ /*A tag 'a' representa a tag Link* */
+        text-transform: uppercase;
+        text-decoration: none;
+        color:  #0F4A3F;
+        font-weight: bold;
+        font-size: 1.3rem;
+
+    }
+    .navMenuDesktop ul li a:hover{ 
+        color:  #2bbea3;}
+   
+
+    header nav .matricula{
+        display: block;
+        
+    }
+    header nav .matricula img{
+        width: 200px;
+    }
+    .sidebarMenuMobile{
+        display: none;
+    }
+
+    header nav ul {
+        flex-direction: row;
+    }
+   
+    
 }

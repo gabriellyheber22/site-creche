@@ -4,21 +4,195 @@
     overflow: hidden;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     
 }
+div .col{
+    margin-top:1rem;
+}
 .card{
-    width: 250px;
-    height: 500px !important;
+    width: 100%;
+    height: 45rem !important;
     border-color: #cfcfcf6b !important;
     border-radius: 10px !important;
+    box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
     
 
+}
+.containerImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35%;
+}
+.imgCirculo{
+    width: 250px;
+    height: 250px;
 }
 .icon{
     position: absolute;
-    left: 26%;
-    top: 50px;
     width: 100px;
     z-index: 1;
 
+}
+.cardTitulo{
+    color: #00394F !important;
+    text-align: center;
+    font-size: 1.5rem !important;
+   
+    /* margin-bottom: 0.5rem 0 0 1rem !important;
+    margin-top: 0.5rem 0 0 1rem !important; */
+}
+.cardTexto{
+    color: var(--cinza-Padrao);
+    text-align: center;
+    font-size: 1rem;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+   
+}
+.tracoColorido, .tracoColorido2, .tracoColorido3, .tracoColorido4 {
+   width: 150px;
+   height: 5px;
+   margin: 1.5rem 0;
+   
+   
+}
+.tracoColorido{
+    background: linear-gradient(90deg, rgba(143, 191, 38, 1) 0%, rgba(31, 166, 141, 1) 100%);
+}
+.tracoColorido2{
+    background: linear-gradient(90deg,rgba(255, 222, 0, 1) 38%, rgba(253, 128, 1, 1) 100%);
+}
+.tracoColorido3{
+    background: linear-gradient(90deg,rgba(109, 209, 237, 1) 0%, rgba(33, 158, 220, 1) 100%);
+}
+.tracoColorido4{
+    background: linear-gradient(90deg,rgba(232, 143, 128, 1) 0%, rgba(215, 13, 29, 1) 100%);
+}
+@media (min-width: 768px) and (max-width: 1023px ){
+    div .col{
+        width: 100%;
+    }
+    .card{
+        width: 100%;
+        height: 45rem !important;
+       
+        
+    
+    }
+
+    .containerImg{
+        height: 50%;
+    }
+    .imgCirculo{
+        width: 300px;
+        height: 300px;
+    }
+    .cardTitulo{
+        font-size: 2rem !important;
+    }
+    .cardTexto{
+        font-size: 1.5rem;
+    }
+        
+}
+
+@media (min-width: 1023px) and (max-width: 1439px){
+    .row{
+        width: 90vw;
+        margin: auto !important;
+       
+        flex-direction: row;
+    }
+    div .col{
+        width: 25%;
+    }
+    .card{
+        height: 700px !important;
+    }
+
+    .containerImg{
+        height: 30%;
+    }
+    .imgCirculo{
+        width: 200px;
+        height: 200px;
+    }
+    .cardTitulo{
+        font-size: 1.5rem !important;
+        /* margin-bottom: 0.8rem !important; */
+    }
+    .cardTexto{
+        font-size: 1rem;
+       
+        
+    }
+}
+@media (min-width: 1440px) and (max-width: 2559px){
+    .row{
+        width: 90vw;
+        margin: auto !important;
+       
+        flex-direction: row;
+    }
+    div .col{
+        width: 20%;
+    }
+    .card{
+        height: 550px !important;
+    }
+
+    .containerImg{
+        height: 30%;
+    }
+    .imgCirculo{
+        width: 200px;
+        height: 200px;
+    }
+    .cardTitulo{
+        font-size: 1.5rem !important;
+        /* margin-bottom: 0.8rem !important; */
+    }
+    .cardTexto{
+        font-size: 1rem;
+       
+        
+    }
+    
+}
+@media (min-width: 2560px){
+    .row{
+        width: 90vw;
+        margin: auto !important;
+       
+        flex-direction: row;
+    }
+    div .col{
+        width: 15%;
+    }
+    .card{
+        height: 610px !important;
+    }
+
+    .containerImg{
+        height: 30%;
+    }
+    .imgCirculo{
+        width: 200px;
+        height: 200px;
+    }
+    .cardTitulo{
+        font-size: 1.5rem !important;
+        /* margin-bottom: 0.8rem !important; */
+    }
+    .cardTexto{
+        font-size: 1.2rem;
+       
+        
+    }
 }
