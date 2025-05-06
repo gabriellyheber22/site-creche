@@ -2,48 +2,214 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
 
-.nossoCMEI h2{
-color: var(--azul-Escuro);
-font-family: var(--font-Arredondada);
-text-align: center;
-margin-top: 2rem;
+.nossoCMEI h2 {
+    color: var(--azul-Escuro);
+    font-family: var(--font-Arredondada);
+    text-align: center;
+    margin-top: 2rem;
 }
-.homeParagrafo{
+
+.homeParagrafo {
     color: var(--cinza-Padrao);
     font-size: 1rem;
     width: 95vw;
     margin: 3rem auto;
 }
-.cards{
+
+.cards {
     margin: 0 2rem 3rem 2rem;
 }
 
-@media (min-width: 1023px) and (max-width:1439px){
-     .carrossel {
+ /* .bordaSuperior{
+    position: relative;
+    top: -2px !important;
+}
+.bordaInferior{
+    top: -30px !important;
+} */
+
+.sobreNos {
+    background: linear-gradient(90deg, rgba(143, 191, 38, 1) 0%, rgba(31, 166, 141, 1) 100%);
+   margin-top: -15px;
+    width: 100vw;
+    height: 80vh;
+}
+
+.sobreNos_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0.5rem;
+    height: 80vh;
+
+}
+
+.sobreNos_texto {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+
+}
+
+div .sobreNos_texto h2 {
+    font-family: var(--font-Arredondada);
+    color: white;
+    font-size: 2rem;
+    font-weight: bolder;
+
+
+}
+
+div .sobreNos_texto p {
+    font-size: 1.3rem;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.sobreNos_imagem {
+    display: none;
+}
+@media (min-width: 768px) and (max-width: 1023px){
+   /* .bordaSuperior{
+        top: -2px !important;
+    }
+    .bordaInferior{
+        bottom: 30px !important;
+    } */
+    .sobreNos{
+        margin-top: -18px;
+        height: 53vh;
+    }
+    .sobreNos_info{
+        padding: 0 0.5rem;
+        height: 50vh;
+       
+    }
+}
+
+@media (min-width: 1024px) and (max-width:1439px) {
+    .carrossel {
         position: relative;
         top: -15px !important;
-    } 
-    .nossoCMEI h2{
+    }
+
+    .nossoCMEI h2 {
         font-size: 3rem;
-        margin: 3rem 0 1rem 0 ;
-        }
-    .homeParagrafo{
+        margin: 3rem 0 1rem 0;
+    }
+
+    .homeParagrafo {
         width: 55vw;
         font-size: 1rem;
         margin-top: 1.5rem;
     }
+    
+    /* .bordaInferiorGrande{
+        bottom: 20px !important;
+    } */
+    .sobreNos{
+        margin-top: -10px;
+        height: 54.5vh;
+    } 
+    .sobreNos_info{
+        flex-direction: row ;
+        height: 56.3vh;
+    }
+    .sobreNos_texto{
+        width: 45%;
+    }
+    .sobreNos_imagem {
+        display: block;
+        width: 43%;
+    
 }
-@media (min-width: 1440px){
-    .nossoCMEI h2{
+
+}
+
+@media (min-width: 1440px) and (max-width: 2559px){
+    .nossoCMEI h2 {
         font-size: 3rem;
         margin-top: 6rem;
-        }
-    .homeParagrafo{
+    }
+
+    .homeParagrafo {
         width: 50vw;
         font-size: 1.5rem;
         margin-top: 1.5rem;
+    }
+    /* .bordaSuperior{
+        top: -2px !important;
+    }
+    .bordaInferiorGrande{
+        bottom: 20px !important;
+    } */
+    .sobreNos{
+        height: 65vh;
+        margin-top: -10px;
+    } 
+    .sobreNos_info{
+        flex-direction: row ;
+        justify-content: center;
+        height: 65vh;
+    }
+    .sobreNos_texto{
+        width: 500px;
+    }
+    div .sobreNos_texto h2{
+        font-size: 48px;
+    }
+    div .sobreNos_texto p{
+        font-size: 1.2rem;
+    }
+    .sobreNos_imagem {
+        display: block;
+        height: 65vh;
+    }
+}
+@media (min-width: 2560px){
+    .nossoCMEI h2 {
+        font-size: 3rem;
+        margin-top: 6rem;
+    }
+
+    .homeParagrafo {
+        width: 50vw;
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+    }
+    /* .bordaSuperior{
+        top: -2px !important;
+    }
+    .bordaInferiorGrande{
+        bottom: 43px !important;
+    } */
+    .sobreNos{
+       top: none;
+       margin-top: -18px;
+        height: 51vh;
+    } 
+    .sobreNos_info{
+        flex-direction: row ;
+        justify-content: center;
+        padding: 0 0.5rem ;
+        height: 53vh;
+    }
+    .sobreNos_texto{
+        width: 600px;
+    }
+    div .sobreNos_texto h2{
+        font-size: 48px;
+    }
+    div .sobreNos_texto p{
+        font-size: 1.6rem;
+    }
+    .sobreNos_imagem {
+        display: block;
+        height: 50vh;
     }
 }
