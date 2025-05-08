@@ -106,7 +106,9 @@ header nav .matricula{
     header .containerHeader{
         height: 65px;
     }
-
+.bordaSuperior{
+    top:70px;
+}
 
     .logoGrande{
         display: block;

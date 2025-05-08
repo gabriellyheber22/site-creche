@@ -25,7 +25,7 @@ function Home() {
           <Cards />
         </div>
       </section>
-      <BordaSuperior className="bordaSuperior" />
+      <BordaSuperior className="bordaSuperiorSobreNos" />
       <section className="sobreNos">
         
         <div className="sobreNos_info">
@@ -49,7 +49,7 @@ function Home() {
         </div>
         
       </section>
-      <BordaInferior className="bordaInferior" />
+      <BordaInferior className="bordaInferiorSobreNos" />
       <section className="nossasSalas">
         <div className="nossaSala_texto">
           <h2>Nossas Salas de Aula</h2>

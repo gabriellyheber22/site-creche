@@ -6,13 +6,16 @@ import imagemGrande2 from "../../assets/Imagens/imagemCarrosselGrande2.svg";
 import imagemGrande3 from "../../assets/Imagens/imagemCarrosselGrande3.svg";
 import BordaInferior from "../../componentes/bordaRasgada/BordaRasgadaInferior"
 
+
 import "./Carrossel.css";
 
 function Carrossel() {
   return (
    
           <div className="carrossel">
+             
             <Carousel className="carousel" keyboard={true} interval={3000}>
+             
               <Carousel.Item>
                 <Imagem
                   className="d-block w-100 h-50 imagemSlide"
