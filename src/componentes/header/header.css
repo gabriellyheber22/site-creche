@@ -44,6 +44,7 @@ header nav .matricula{
 }
 
 @media (min-width: 1024px) and (max-width:1439px) {
+  
     .logoGrande{
         display: block;
     }
@@ -106,6 +107,9 @@ header nav .matricula{
     header .containerHeader{
         height: 65px;
     }
+    div .containerHeader img{
+        height: 70px;
+            }
 .bordaSuperior{
     top:70px;
 }
