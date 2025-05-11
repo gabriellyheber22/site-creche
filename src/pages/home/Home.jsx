@@ -5,6 +5,7 @@ import Cards from "../../componentes/cards/Cards";
 import meninoSorrindo from "../../assets/Imagens/meninoSorrindo.svg";
 import BordaInferior from "../../componentes/bordaRasgada/BordaRasgadaInferior";
 import BordaSuperior from "../../componentes/bordaRasgada/BordaRasgadaSuperior";
+import CardsSalas from "../../componentes/cardsSalas/CardsSalas";
 import "./Home.css";
 
 function Home() {
@@ -56,10 +57,11 @@ function Home() {
           <p>
             Nossas turmas são organizadas em três períodos: Integral, Parcial
             Matutino e Parcial Vespertino, garantindo flexibilidade para atender
-            às necessidades das crianças e de suas famílias.{" "}
+            às necessidades das crianças e de suas famílias.
           </p>
         </div>
-        <div className="nossasSalas_cards"></div>
+        <CardsSalas/>
+        <button className="nossasSalas_botao">Ver Mais Salas</button>
       </section>
     </article>
   );

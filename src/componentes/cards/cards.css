@@ -1,6 +1,6 @@
 .row{
     width: 80vw;
-    margin: auto !important;
+    margin: 1rem auto 1rem auto !important;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -15,7 +15,7 @@ div .col{
     height: 45rem !important;
     border-color: #cfcfcf6b !important;
     border-radius: 10px !important;
-    box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.082);
     
 
 }
@@ -144,7 +144,7 @@ div .col{
         width: 20%;
     }
     .card{
-        height: 550px !important;
+        height: 660px !important;
     }
 
     .containerImg{
@@ -176,7 +176,7 @@ div .col{
         width: 15%;
     }
     .card{
-        height: 610px !important;
+        height: 650px !important;
     }
 
     .containerImg{

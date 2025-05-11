@@ -1,0 +1,121 @@
+.nossasSalas_cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0;
+    
+}
+.cardSalas{
+    width: 100%;
+    border: 1px solid #EEEE;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.082);
+    
+    
+}
+.nossaSala_imagem{
+    width: 100%;
+}
+.cardTexto{
+    text-align: left;
+    padding: 0 0.5rem;
+}
+div .cardTexto h3{
+    color: var(--azul-Escuro);
+}
+div .cardTexto h4{
+font-weight: bold;
+}
+div .cardTexto h4, div .cardTexto p{
+    color: var(--cinza-Padrao);
+    font-size: 1rem;
+    
+}
+div .cardTexto p{
+    text-align: left;
+    font-weight: lighter;
+}
+.cardQuantitativo{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 0 0.5rem;
+    margin-bottom: 1rem;
+}
+.quantitativoVagas{
+    border-right: 1px solid rgba(128, 128, 128, 0.336);
+}
+
+.quantitativoVagas h4, .quantitativoIdades h4{
+    font-size: 1rem;
+    text-align: center;
+}
+.quantitativoVagas p, .quantitativoIdades p{
+    font-weight: bolder;
+    font-size: 1rem;
+}
+.quantitativoVagas p{
+    color: var(--vermelho);
+   
+}
+.quantitativoIdades p{
+    color: var(--verde-Padrão);
+}
+.quantitativoVagas, .quantitativoIdades{
+    width: 45%;
+}
+
+@media (min-width: 1024px) and (max-width: 1439px){
+    .nossasSalas_cards{
+        margin: 2rem 0;
+        
+    }
+    .cardSalas{
+        width: 29%;
+    }
+}
+@media (min-width: 1440px) and (max-width: 2559px) {
+    .nossasSalas_cards{
+        margin: 2rem 0;
+        
+    }
+    .cardSalas{
+        width: 23%;
+    }
+}
+@media (min-width: 2560px){
+    .nossasSalas_cards{
+        gap: 5.2rem;
+        margin: 4rem 0;
+        
+    }
+    .cardSalas{
+        width: 18%;
+        
+    }
+    
+    div .cardTexto h3{
+        font-size: 2.5rem;
+    }
+    div .cardTexto h4{
+        font-weight: bold;
+        }
+        div .cardTexto p{
+            font-weight: lighter;
+ }
+    div .cardTexto h4, div .cardTexto p{
+        font-size: 1.5rem;
+    }
+   
+    .quantitativoVagas h4, .quantitativoIdades h4{
+        font-size: 1.5rem;
+     
+    }
+    .quantitativoVagas p, .quantitativoIdades p{
+              font-size: 1.5rem;
+    }
+    
+  
+    
+}
