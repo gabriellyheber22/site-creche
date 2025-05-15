@@ -6,6 +6,7 @@ import meninoSorrindo from "../../assets/Imagens/meninoSorrindo.svg";
 import BordaInferior from "../../componentes/bordaRasgada/BordaRasgadaInferior";
 import BordaSuperior from "../../componentes/bordaRasgada/BordaRasgadaSuperior";
 import CardsSalas from "../../componentes/cardsSalas/CardsSalas";
+import Galeria from "../../componentes/galeria/Galeria";
 import "./Home.css";
 
 function Home() {
@@ -28,7 +29,6 @@ function Home() {
       </section>
       <BordaSuperior className="bordaSuperiorSobreNos" />
       <section className="sobreNos">
-        
         <div className="sobreNos_info">
           <div className="sobreNos_texto">
             <h2>Sobre o CMEI Carlos Alberto Cruz</h2>
@@ -48,7 +48,6 @@ function Home() {
             alt="Menino sorrindo mostrando as mãos"
           />
         </div>
-        
       </section>
       <BordaInferior className="bordaInferiorSobreNos" />
       <section className="nossasSalas">
@@ -60,9 +59,18 @@ function Home() {
             às necessidades das crianças e de suas famílias.
           </p>
         </div>
-        <CardsSalas/>
+        <CardsSalas />
         <button className="nossasSalas_botao">Ver Mais Salas</button>
       </section>
+      <BordaSuperior/>
+      <section className="galeria">
+        
+        <h2>Nossa Galeria de Lembranças</h2>
+        <Galeria/>
+
+        
+      </section>
+      <BordaInferior/>
     </article>
   );
 }
