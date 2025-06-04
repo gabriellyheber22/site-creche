@@ -116,7 +116,7 @@ div .sobreNos_texto p {
  .galeria{
     padding: 5rem 0;
     margin-top: -15px;
-    background: linear-gradient(90deg,rgba(109, 209, 237, 1) 0%, rgba(0, 89, 255, 1) 100%);
+    background: linear-gradient(90deg,rgba(109, 209, 237, 1) 50%, rgba(0, 89, 255, 1) 100%);
  }
  .galeria h2{
     font-family: var(--font-Arredondada);
@@ -158,6 +158,10 @@ div .sobreNos_texto p {
      }
      .nossasSalas_botao{
         width: 60vw;
+     }
+     .galeria{
+        margin-top: -20px;
+        
      }
 }
 
@@ -204,6 +208,10 @@ div .sobreNos_texto p {
     }
     .nossasSalas_botao{
         width: 30vw;
+     }
+     .galeria{
+               margin-top: -10px;
+        
      }
 
 }
@@ -259,6 +267,10 @@ div .sobreNos_texto p {
     .nossasSalas_botao{
         width: 30vw;
      }
+     .galeria{
+        margin-top: 55px;
+ 
+}
 }
 
 @media (min-width: 2560px) {
@@ -323,4 +335,8 @@ div .sobreNos_texto p {
         width: 30vw;
         height: 100px;
      }
+     .galeria{
+        margin-top: 50px;
+ 
+}
 }
